@@ -506,4 +506,4 @@ export const food_list = [
   },
 ];
 
-export const url = "https://food-backend-26yh.onrender.com";
+export const url = "https://food-backend-1olw.onrender.com";

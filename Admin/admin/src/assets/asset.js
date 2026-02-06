@@ -6,7 +6,7 @@ import upload_area from './upload_area.png';
 import parcel_icon from './parcel_icon.png';
 import logoAdmin from './logoAdmin.png';
 
-export const url ="https://food-backend-26yh.onrender.com"
+export const url ="https://food-backend-1olw.onrender.com"
 export const currency ='Rs'
 export const asset ={
 
