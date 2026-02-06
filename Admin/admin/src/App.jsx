@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
 
-  const url = "http://localhost:3000";  //BackEnd CallBack
+  const url = "https://food-backend-1olw.onrender.com";  //BackEnd CallBack
 
 
 
