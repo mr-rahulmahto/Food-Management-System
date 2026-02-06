@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 import { createContext } from "react";
-import Cart from "../pages/cart/cart";
+import Card from "../pages/Cart/Card"
 import React from "react";
 import { useEffect } from "react";
 import axios from 'axios'
