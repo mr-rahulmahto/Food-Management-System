@@ -21,12 +21,12 @@
   border-radius: 50%;
   background: #2d1c0a;
   pointer-events: none;
-  z-index: 0;
+  
 }
 
 .footer-inner {
   position: relative;
-  z-index: 1;
+  
 }
 
 /* ─── Top Grid ─── */
@@ -182,17 +182,17 @@
 
 .footer-copy {
   font-size: 12px;
-  color: #4a3020;
+  color: #e1ddda;
   margin: 0;
 }
 
 .footer-copy span {
-  color: #e8451a;
+  color: #c45a47;
 }
 
 .footer-badge {
   font-size: 11px;
-  color: #4a3020;
+  color: #b1a49c;
   background: #221408;
   border: 1px solid #2e1f0f;
   padding: 5px 14px;
