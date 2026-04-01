@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { StoreContext } from '../../Context/StoreContext';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import rupeeIcon from '../../assets/rupee.png';
+import mobilePaymentIcon from '../../assets/mobile-payment.png';
 
 const PlaceOrder = () => {
   const { getTotalCartAmount, token, food_list, cartItems, url } = useContext(StoreContext)
@@ -131,7 +133,7 @@ const PlaceOrder = () => {
                   onClick={() => setPayment("cod")}
                   className={`payment-option ${payment === "cod" ? "selected" : ""}`}
                 >
-                  <img src="../src/assets/rupee.png" alt="Cash on Delivery" />
+                  <img src={rupeeIcon} alt="Cash on Delivery" />
                   <p>Cash On Delivery</p>
                 </div>
 
@@ -139,7 +141,7 @@ const PlaceOrder = () => {
                   onClick={() => setPayment("stripe")}
                   className={`payment-option ${payment === "stripe" ? "selected" : ""}`}
                 >
-                  <img src="../src/assets/mobile-payment.png" alt="Online Payment" />
+                  <img src={mobilePaymentIcon} alt="Online Payment" />
                   <p>Online Payment</p>
                 </div>
 
