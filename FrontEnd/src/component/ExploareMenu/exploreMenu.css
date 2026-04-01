@@ -1,18 +1,50 @@
-.expolar-menu{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500&display=swap');
 
+/* ─── Container ─── */
+.explore-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-family: 'DM Sans', sans-serif;
+  padding-top: 16px;
 }
-.expolar-menu h1{
-    color: #262626;
-    font-weight: 600;
+
+/* ─── Header ─── */
+.explore-menu-header {
+  margin-bottom: 32px;
 }
-.explore-menu-text{
-    color: #262626;
-    font-size: 18px;
-    font-weight: 500;
+
+.explore-menu-eyebrow {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  color: #e8451a;
+  text-transform: uppercase;
+  margin: 0 0 10px;
 }
+
+.explore-menu-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 600;
+  color: #1a1008;
+  line-height: 1.1;
+  margin: 0 0 14px;
+}
+
+.explore-menu-title span {
+  color: #e8451a;
+}
+
+.explore-menu-text {
+  font-size: 14.5px;
+  color: #8a7a6a;
+  line-height: 1.75;
+  max-width: 560px;
+  margin: 0;
+  font-weight: 400;
+}
+
 .explore-menu-list{
     display: flex;
     justify-content: space-between;
@@ -54,10 +86,19 @@
     border-radius: 50px;
 
 }
-@media (max-width:1050px) {
-    .explore-menu-text{
-        max-width: 100%;
-        font-size: 14px;
-    }
-    
+/* ─── Responsive ─── */
+@media (max-width: 1050px) {
+  .explore-menu-text {
+    font-size: 13.5px;
+  }
+}
+
+@media (max-width: 750px) {
+  .explore-menu-title {
+    font-size: 30px;
+  }
+  .explore-img-wrap {
+    width: 80px;
+    height: 80px;
+  }
 }

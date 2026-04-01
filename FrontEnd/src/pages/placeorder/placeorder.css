@@ -44,3 +44,48 @@
   background-color: rgb(232, 30, 30);
   transform: scale(0.98);
 }
+
+/* Payment Method */
+.payment-method {
+  margin: 20px 0;
+}
+
+.payment-method .title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.payment-options {
+  display: flex;
+  gap: 14px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  flex: 1;
+}
+
+.payment-option img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.payment-option p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.payment-option.selected {
+  border-color: tomato;
+  background-color: #fff4f2;
+}

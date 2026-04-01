@@ -1,15 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=DM+Sans:wght@400;500&display=swap');
+
 .food-display {
-    margin-top: 30px;
-}
-.food-display h2{
-    font-size: max(2.4vw, 24px);
-    font-weight: 600;
-}
-.food-display-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    margin-top: 30px;
-    gap: 30px;
-    row-gap: 50px;
+  margin-top: 40px;
+  font-family: 'DM Sans', sans-serif;
 }
 
+/* ─── Header ─── */
+.food-display-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.food-display-eyebrow {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  color: #e8451a;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.food-display-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 600;
+  color: #1a1008;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.food-display-title span {
+  color: #e8451a;
+}
+
+.food-display-count {
+  font-size: 13px;
+  color: #b0a090;
+  padding-bottom: 4px;
+}
+
+/* ─── Grid ─── */
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 750px) {
+  .food-display-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .food-display-list {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 14px;
+  }
+}
