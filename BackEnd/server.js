@@ -45,4 +45,3 @@ app.listen(port,()=>{
 })
 
 
-// mongodb+srv://rahulmahto:Lucky2002@cluster0.7fxzevh.mongodb.net/?
